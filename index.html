@@ -2,40 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>St. Mary Coptic Church – Iowa</title>
-  <link rel="manifest" href="manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Mary Coptic Orthodox Church – Iowa</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#8b0000" />
 </head>
 <body>
+  <header>
+    <h1>St. Mary Coptic Orthodox Church</h1>
+    <p>Iowa, USA</p>
+  </header>
 
   <nav>
-    <h1>St. Mary</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="announcements.html">News</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <a href="messaging.html">Messaging</a>
-      <li><a href="https://sites.google.com/view/stmarycoptic-dsm/home" target="_blank">Website</a></li>
-    </ul>
+    <a href="index.html" class="active">Home</a>
+    <a href="news.html">News</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="messaging.html">Messaging</a>
   </nav>
 
   <main>
     <section>
-      <h2>Welcome to St. Mary Church</h2>
-      <p>This app connects you to church news, priest availability, and links to the full website.</p>
+      <h2>Welcome!</h2>
+      <p>
+        We are a vibrant and growing Coptic Orthodox community rooted in Apostolic
+        tradition, worship, and love. Join us in the liturgical life of the Church,
+        sacraments, and fellowship.
+      </p>
+    </section>
+
+    <section>
+      <h2>Service Times</h2>
+      <ul>
+        <li>🕊️ Saturday Vespers: 6:00 PM</li>
+        <li>⛪ Sunday Liturgy: 8:30 AM – 11:30 AM</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:stmary@copticchurch.org">stmary@copticchurch.org</a></p>
+      <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 St. Mary Coptic Orthodox Church – Iowa
+    <p>© 2025 St. Mary Coptic Orthodox Church – Iowa</p>
   </footer>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
 </body>
 </html>
