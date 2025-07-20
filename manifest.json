@@ -1,10 +1,10 @@
 {
-  "name": "St. Mary Iowa Church",
+  "name": "St. Mary Coptic Church – Iowa",
   "short_name": "StMary",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#8b0000",
   "icons": [
     {
       "src": "icon-192.png",
