@@ -5,17 +5,25 @@
   <link rel="manifest" href="manifest.json" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#ffffff" />
-  <title>St. Mary Iowa</title>
+  <title>St. Mary Coptic Church – Iowa</title>
 </head>
 <body style="margin:0;padding:0;">
-  <!-- Replace the URL below with your actual published Google Sites link -->
-  <iframe src="https://sites.google.com/view/
-stmarycoptic-dsm" style="width:100%; height:100vh; border:none;"></iframe>
 
+  <!-- Embedded Google Site -->
+  <iframe src="https://sites.google.com/view/stmarycoptic-dsm/home" style="width:100%; height:100vh; border:none;"></iframe>
+
+  <!-- Register Service Worker for installability -->
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Service Worker registration failed:', error);
+        });
     }
   </script>
+
 </body>
 </html>
