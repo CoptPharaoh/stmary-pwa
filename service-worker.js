@@ -1,7 +1,7 @@
-self.addEventListener("install", event => {
+self.addEventListener("install", function (event) {
   console.log("Service Worker installed.");
 });
 
-self.addEventListener("fetch", event => {
-  // Let network handle it
+self.addEventListener("fetch", function (event) {
+  // Default fetch behavior
 });
