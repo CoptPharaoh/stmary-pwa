@@ -1,82 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Schedule with Abouna</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .calendar-wrapper {
-      width: 100%;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Priest Appointments</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📅 Schedule with Abouna</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="https://sites.google.com/view/stmarycoptic-dsm/home" target="_blank">Full Website</a>
+      </nav>
+    </header>
 
-    .calendar-iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-      overflow: hidden;
-    }
+    <main>
+      <section>
+        <div class="responsive-frame">
+          <iframe
+            src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ18Ho26E9qFNFXkQkqKD-NLnmbkGUWBwgWBRYPgpw2bzA5gDw_3h9rsnsWXJS51If67-Cx0TkKX"
+            style="border: none; width: 100%; height: 100%;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
-    @media (max-width: 600px) {
-      .calendar-iframe {
-        height: 95vh;
-      }
-    }
-
-    .external-link {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .external-link a {
-      background: #8b0000;
-      color: white;
-      padding: 0.6rem 1rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .external-link a:hover {
-      background: #a60000;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <h1>St. Mary</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="announcements.html">News</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="https://sites.google.com/view/stmarycoptic-dsm/home" target="_blank">Website</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2>Schedule Time with Abouna</h2>
-    <div class="calendar-wrapper">
-      <iframe 
-        class="calendar-iframe"
-        src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ18Ho26E9qFNFXkQkqKD-NLnmbkGUWBwgWBRYPgpw2bzA5gDw_3h9rsnsWXJS51If67-Cx0TkKX"
-        allowfullscreen>
-      </iframe>
-      <div class="external-link">
-        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ18Ho26E9qFNFXkQkqKD-NLnmbkGUWBwgWBRYPgpw2bzA5gDw_3h9rsnsWXJS51If67-Cx0TkKX" target="_blank">
-          Open in Full Page
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 St. Mary Coptic Orthodox Church – Iowa
-  </footer>
-
-</body>
+    <footer>
+      <p>© 2025 St. Mary Coptic Orthodox Church – Iowa</p>
+    </footer>
+  </body>
 </html>
