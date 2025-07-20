@@ -61,8 +61,9 @@ main h2 {
   color: #8b0000;
 }
 
-/* Embedded Slides Wrapper */
-.slides-wrapper iframe {
+/* Embeds */
+.slides-wrapper iframe,
+.calendar-wrapper iframe {
   width: 100%;
   max-width: 960px;
   height: 60vh;
@@ -81,7 +82,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Mobile Optimization */
+/* Mobile */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -95,7 +96,8 @@ footer {
     padding-top: 0.5rem;
   }
 
-  .slides-wrapper iframe {
+  .slides-wrapper iframe,
+  .calendar-wrapper iframe {
     height: 50vh;
   }
 }
